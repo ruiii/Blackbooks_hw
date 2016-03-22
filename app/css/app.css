@@ -1,0 +1,250 @@
+/*  homepage   */
+.header {
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 1000px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.footer {
+  height: 99px;
+  max-width: 1400px;
+  position: relative;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #767676;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.header-center {
+  max-width: 1400px;
+}
+.header-link {
+  color: black;
+  font-size: 21px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.header-link:focus,
+.header-link:hover,
+.header-link:active {
+  border: none;
+  border-bottom: 1px solid #2196f3;
+  color: #2196f3;
+  text-decoration: none;
+}
+.header-link.active {
+  border: none;
+  border-bottom: 1px solid #2196f3;
+  color: #2196f3;
+  text-decoration: none;
+}
+.icon {
+  color: black;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.header-col-left {
+  margin-top: -10px;
+}
+.header-col-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.continer-center {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1400px;
+}
+.homepage-panel {
+  max-width: 1300px;
+  max-height: 250px;
+  margin: 35px 2%;
+}
+.homepage-cup {
+  font-size: 50px;
+  color: goldenrod;
+  margin: 0 25px 10px;
+}
+.homepage-title {
+  font-size: 27px;
+}
+.homepage-title-continer {
+  display: flex;
+  justify-content: center;
+}
+.homepage-books-continer {
+  width: 80%;
+}
+
+/*    admin
+    dashboard   */
+html {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.admin-title {
+  margin-bottom: -20px;
+}
+.hun-div {
+  width: 100%;
+  height: 100%;
+}
+.nav-img {
+  border-radius: 100%;
+  width: 170px;
+  height: 170px;
+}
+.nav-usn {
+  margin-bottom: 50px;
+}
+.flex-col {
+  display: flex;
+  height: 100%;
+}
+.nav-width {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 17px;
+  border: 1px solid #eeeeee;
+  box-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+#index .nav {
+  display: flex;
+  flex-direction: column;
+  -webkit-padding-start: 40px;
+}
+.nav-item-active {
+  border-top: 2px solid #2196f3;
+  border-bottom: 2px solid #2196f3;
+  border-right: 2px solid white;
+  margin-right: -2px;
+}
+.nav-item-active > a {
+  color: #2196f3;
+}
+a{
+  color: black;
+}
+.nav-stacked > li {
+  margin: 10px -2px;
+  padding: 10px 0;
+}
+.nav-stacked > li > a:hover,
+.nav-stacked > li > a:focus,
+.nav-stacked > li > a:active {
+  background-color: #fff;
+  color: #2196f3;
+}
+.panel-fontawsome {
+  font-size: 5em;
+  color: white;
+  float: left;
+  padding-top: 40%;
+}
+.panel-numbers {
+  font-size: 40px;
+  color: white;
+  float: right;
+}
+.panel-text {
+  font-size: 17px;
+  color: white;
+  float: right;
+}
+.panel-numbers-continer {
+  display: flex;
+  flex-direction: column;
+}
+.panel-arrow {
+  float: right;
+}
+.panel-arrow.y{
+  color: #ff9800;
+}
+.panel-arrow.r{
+  color: #e51c23;
+}
+.panel-check {
+  float: left;
+}
+.panel-check.y{
+  color: #ff9800;
+}
+.panel-check.r{
+  color: #e51c23;
+}
+.panel-body {
+  padding: 0px !important;
+}
+.panel-footer {
+  height: 40px;
+}
+.row {
+  margin-right: -10px !important;
+}
+option{
+   color: #222222;
+ }
+hr {
+  width: 97%;
+}
+
+/* new book */
+.nav-btn {
+  width: 100%;
+  box-shadow: none !important;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 0px;
+  color: black !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+.nav-btn.active {
+  width: 101%;
+  border: none;
+  border-top: 2px solid #2196f3;
+  border-bottom: 2px solid #2196f3;
+  border-right: 11px solid white;
+  color: #2196f3 !important;
+  background-color: transparent;
+}
+form {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin: 15px;
+}
+@keyframes slideIn {
+  0%   {right:-500px;}
+  100% {right: 0px;}
+}
+@keyframes slideOut {
+  0%   {right: 0px;}
+  100% {right: 100px; display: none;}
+}
+.form-hidden {
+  display: none;
+  position: relative;
+  animation: slideOut 0.7s;
+  -webkit-animation: slideOut 0.7s;
+}
+.form-show {
+  position: relative;
+  display: block;
+  animation: slideIn 0.7s;
+  -webkit-animation: slideIn 0.7s;
+}
